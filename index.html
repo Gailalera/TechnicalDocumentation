@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+
+<nav id="navbar">
+  <header>Python Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Python Introduction</a></li>
+    </li>
+    <li>
+      <a class="nav-link" href="#Python Syntax">Python Syntax</a>
+    </li>
+    <li><a class="nav-link" href="#Python Comments">Python Comments</a></li>
+    <li><a class="nav-link" href="#Python Variables">Python Variables</a></li>
+    <li>
+      <a class="nav-link" href="#Python Datatypes">Python Datatypes</a>
+    </li>
+    <li><a class="nav-link" href="#Python Numbers">Python Numbers</a></li>
+    <li><a class="nav-link" href="#Python Casting">Python Casting</a></li>
+    <li><a class="nav-link" href="#Python Strings">Python Strings</a></li>
+    <li><a class="nav-link" href="#Python Boleans">Python Boleans</a></li>
+    <li>
+      <a class="nav-link" href="#Python Operators">Python Operators</a>
+    </li>
+    <li><a class="nav-link" href="#Python Sets">Python Sets</a></li>
+    <li>
+      <a class="nav-link" href="#Python Arrays"
+        >Python Arrays</a
+      >
+    </li>
+    <li><a class="nav-link" href="#Python Classes/Objects">Python Classes/Objects</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+    <p>
+        Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+      </p>
+      <p>
+       IT IS USED FOR:
+      </p>
+      <ul>
+        <li>Web Development</li>
+        <li>Software Development</li>
+        <li>Mathematics</li> 
+        <li>System Scripting</li>
+      </ul>
+      <h1>What can Python do?</h1>
+      <ul>
+      <li>Python can be used on a server to create web applications.</li>
+       <li>Python can be used alongside software to create workflows.</li>
+        <li>Python can connect to database systems. It can also read and modify files.</li>
+         <li>Python can be used to handle big data and perform complex mathematics.</li>
+         <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+      </ul>
+      <h1>Why python?</h1>
+      <ul>
+        <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+        <li>Python has a simple syntax similar to the English language.</li>
+        <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+        <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+        <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+      </ul>
+      <h1>Python compared to other programming languages</h1>
+        <ul>
+          <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+          <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+          <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+        </ul>
+
+    </article>
+  </section>
+  <section class="main-section" id="Python Syntax">
+    <header>Python Syntax</header>
+    <p>The syntax of the Python programming language is the set of rules that defines how a Python program will be written and interpreted (by both the runtime system and by human readers).<br> The Python language has many similarities to Perl, C, and Java.</p>
+    <article>
+      <h1>Execute Python Syntax</h1>
+      <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+      <code> print("Hello, World!")<br>
+Hello, World!</code>
+      
+      <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+      <code>C:\Users\Your Name>python myfile.</code>
+
+
+      <h1>Python Indentation</h1>
+      <p>Indentation refers to the spaces at the beginning of a code line.</p>
+      <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+      <p>Python uses indentation to indicate a block of code.</p>
+      <h1>EXAMPLE</h1>
+      <code>if 5 > 2:<br>
+  print("Five is greater than two!")</code>
+   
+    </article>
+  </section>
+  <section class="main-section" id="Python Comments">
+    <header>Python Comments</header>
+    <article>
+      <p>
+        A Python comment is a line of text in a program that is not executed by the interpreter. Comments are used during debugging to identify issues and to explain code. Comments start with a hash character (#).
+      </p>
+      <p>Comments can be used to explain Python code.</p>
+      <p>Comments can be used to make the code more readable.</p>
+      <p>Comments can be used to prevent execution when testing code.</p>
+      <h1>Creating a Comment</h1>
+      <p>
+          Comments starts with a #, and Python will ignore them:
+      </p>
+      <p>
+        Example:
+      </p>
+      <code>#This is a comment
+print("Hello, World!")</code>
+     <h1>Multi Line Comments</h1>
+    <p>Python does not really have a syntax for multi line comments.</p>
+    <p>To add a multiline comment you could insert a # for each line:</p>
+  
+    <p>EXAMPLE</p>
+    <code>#This is a comment<br>
+#written in<br>
+#more than just one line<br>
+print("Hello, World!")</code>
+
+
+    </article>
+  </section>
+  <section class="main-section" id="Python Variables">
+    <header>Python Variables</header>
+    <article>
+     A Python variable is a reserved memory location to store values. In other words, a variable in a python program gives data to the computer for processing. Every value in Python has a datatype. <br>Different data types in Python are Numbers, List, Tuple, Strings, Dictionary, etc.
+     
+     <h1>Variables</h1>
+     <li>Variables are containers for storing data values.</li>
+     <h1>Creating Variables</h1>
+     <li>A variable is created the moment you first assign a value to it.</li>
+        <li>Python has no command for declaring a variable.</li>
+      <p>Example</p>
+      <code>x = 5
+y = "John"
+print(x)
+print(y)</code>
+      <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+      <code>x = 4       # x is of type int
+x = "Sally" # x is now of type str
+print(x)</code>
+      <h1>Casting</h1>
+      <li>If you want to specify the data type of a variable, this can be done with casting.</li>
+      <code>x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0</code>
+
+  <h1>Get the Type</h1>
+  <li>You can get the data type of a variable with the type() function.</li>
+  <code>x = 5
+y = "John"
+print(type(x))
+print(type(y))</code>
+    </article>
+  </section>
+
+
+  <section class="main-section" id="Python Datatypes">
+    <header>Python Datatypes</header>
+    <h1>Built-in Data Types</h1>
+    <p>Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes</p>
+    <p>
+      In programming, data type is an important concept.
+Variables can store data of different types, and different types can do different things.
+Python has the following data types built-in by default, in these categories:
+    </p>
+    <code>Text Type:      str
+          Numeric Types:  int, float, complex
+          Sequence Types: list, tuple, range
+          Mapping Type:   dict
+          Set Types:      set, frozenset
+          Boolean Type:   bool
+          Binary Types:   bytes, bytearray, memoryview</code>
+    
+      <h1>Getting the Data Type</h1>
+    <li>You can get the data type of any object by using the type() function:</li>
+      <code>x = 5
+print(type(x))</code>
+
+
+  </section>
+  <section class="main-section" id="Python Numbers">
+    <header>Python Numbers</header>
+    <article>
+      <h1>Python Numbers</h1>
+      <li>int</li>
+      <li>float</li>
+      <li>complex</li>
+      <p>
+       Variables of numeric types are created when you assign a value to them:</p>
+      <code>x = 1    # int
+y = 2.8  # float
+z = 1j   # complex</code>
+
+    <p>To verify the type of any object in Python, use the type() function:</p>
+    <code>print(type(x))
+print(type(y))
+print(type(z))</code>
+
+    <h1>Int</h1>
+    <li>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</li>
+    <code>x = 1
+        y = 35656222554887711
+        z = -3255522
+
+        print(type(x))
+        print(type(y))
+        print(type(z))</code>
+
+        <h1>Float</h1>
+        <li>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</li>
+        <code>x = 1.10
+               y = 1.0
+                z = -35.59
+
+                print(type(x))
+                print(type(y))
+                print(type(z))</code>
+        <p>Float can also be scientific numbers with an "e" to indicate the power of 10.</p>
+        <code>x = 35e3
+               y = 12E4
+                z = -87.7e100
+
+                print(type(x))
+                print(type(y))
+                print(type(z))</code>
+
+          <h1>Complex</h1>
+          <li>Complex numbers are written with a "j" as the imaginary part:</li>
+          <code>x = 3+5j
+                 y = 5j
+                   z = -5j
+
+                  print(type(x))
+                  print(type(y))
+                  print(type(z))</code>
+          <h1>Type Conversion</h1>
+          <li>You can convert from one type to another with the int(), float(), and complex() methods:</li>
+          <code>x = 1    # int
+                            y = 2.8  # float
+                                z = 1j   # complex
+
+                                  #convert from int to float:
+                                  a = float(x)
+
+                                    #convert from float to int:
+                                        b = int(y)
+
+                                        #convert from int to complex:
+                                            c = complex(x)
+
+                                                  print(a)
+                                                          print(b)
+                                                              print(c)
+
+                                                                  print(type(a))
+                                                                      print(type(b))
+                                                                          print(type(c))</code>
+    </article>
+  </section>
+  <section class="main-section" id="Python Casting">
+    <header>Python Casting</header>
+      <p>Casting is when you convert a variable value from one type to another. This is, in Python, done with functions such as int() or float() or str() . <br> A very common pattern is that you convert a number, currently as a string into a proper number.</p>
+    <article>
+      <h3>Specify a Variable Type</h3>
+      <p>
+       There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+      </p>
+      <p>Casting in python is therefore done using constructor functions:</p>
+          <li>int() - constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number)</li>
+          <li>float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)</li>
+          <li>str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals</li>
+          <p>Integers</p>
+          <code>x = int(1)   # x will be 1
+            y = int(2.8) # y will be 2
+            z = int("3") # z will be 3</code>
+          <p>Floats</p>
+          <code>x = float(1)     # x will be 1.0
+          y = float(2.8)   # y will be 2.8
+          z = float("3")   # z will be 3.0
+          w = float("4.2") # w will be 4.2</code>
+
+        <p>Strings</p>
+        <code>x = str("s1") # x will be 's1'
+          y = str(2)    # y will be '2'
+          z = str(3.0)  # z will be '3.0'</code>
+
+
+    </article>
+  </section>
+  <section class="main-section" id="Python Strings">
+    <header>Python Strings</header>
+    <article>
+      <h1>Strings</h1>
+      <p>
+       Strings in python are surrounded by either single quotation marks, or double quotation marks.
+          'hello' is the same as "hello".
+          You can display a string literal with the print() function:
+                </p>
+      <code>print("Hello")
+        print('Hello')</code>
+
+    <h3>Assign String to a Variable</h3>
+    <li>Assigning a string to a variable is done with the variable name followed by an equal sign and the string:</li>
+    <code>a = "Hello"
+          print(a)</code>
+
+    <h3>Multiline Strings</h3>
+    <li>You can assign a multiline string to a variable by using three quotes:</li>
+    <code>a = """Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua."""
+            print(a)</code>
+      
+      <h1>Strings are Arrays</h1>
+      <li>Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
+            However, Python does not have a character data type, a single character is simply a string with a length of 1.
+            Square brackets can be used to access elements of the string.</li>
+      <code>a = "Hello, World!"
+                    print(a[1])</code>
+    <h3>Looping Through a String</h3>
+    <li>Since strings are arrays, we can loop through the characters in a string, with a for loop.</li>
+    <code>for x in "banana":
+  print(x)</code>
+
+    </article>
+  </section>
+  <section class="main-section" id="Python Boleans">
+    <header>Python Boleans</header>
+    <li>Booleans represent one of two values: True or False.</li>
+    <article>
+      <h1>Boolean Values</h1>
+       <li>In programming you often need to know if an expression is True or False.
+                You can evaluate any expression in Python, and get one of two answers, True or False.
+                When you compare two values, the expression is evaluated and Python returns the Boolean answer:</li>
+                      <code>print(10 > 9)
+                print(10 == 9)
+                print(10 < 9)</code>
+        <p>When you run a condition in an if statement, Python returns True or False:</p>
+          <li>a = 200
+                    b = 33
+
+                    if b > a:
+                      print("b is greater than a")
+                    else:
+                        print("b is not greater than a")</li>
+      <h3>Evaluate Values and Variables</h3>
+      <li>The bool() function allows you to evaluate any value, and give you True or False in return,</li>
+      <code>print(bool("Hello"))
+            print(bool(15))</code>
+      <h3>Most Values are True</h3>
+      <li>Almost any value is evaluated to True if it has some sort of content.<br>
+          Any string is True, except empty strings.
+          Any number is True, except 0.
+          Any list, tuple, set, and dictionary are True, except empty ones.</li>
+          <code>bool("abc")
+            bool(123)
+            bool(["apple", "cherry", "banana"])</code>
+      <h3>Some Values are False</h3>
+      <li>In fact, there are not many values that evaluate to False, except empty values, such as (), [], {}, "", the number 0, and the value None. And of course the value False evaluates to False.</li>
+              <p>the following returns false</p>
+              <code>bool(False)
+                  bool(None)
+                  bool(0)
+                  bool("")
+                  bool(())
+                  bool([])
+                  bool({})</code>
+    </article>
+  </section>
+  <section class="main-section" id="Python Operators">
+    <header>Python Operators</header>
+      <li>Operators are used to perform operations on variables and values.
+            In the example below, we use the + operator to add together two values:</li>
+    <article>
+      <p>Python divides the operators in the following groups:</p>
+         <ul>
+            <li>Arithmetic operators - Arithmetic operators are used with numeric values to perform common mathematical operations</li>
+            <li>Assignment operators - Assignment operators are used to assign values to variables</li>
+            <li>Comparison operators - Comparison operators are used to compare two values</li>
+            <li>Logical operators - Logical operators are used to combine conditional statements</li>
+            <li>Identity operators  - Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location</li>
+            <li>Membership operators  - Membership operators are used to test if a sequence is presented in an object</li>
+            <li>Bitwise operators - Bitwise operators are used to compare (binary) numbers</li>
+          </ul>
+      
+    </article>
+  </section>
+  <section class="main-section" id="Python Sets">
+    <header>Python Sets</header>
+    <code>myset = {"apple", "banana", "cherry"}</code>
+    <article>
+     <h1>SET</h1>
+     <li>Sets are used to store multiple items in a single variable.
+              Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.
+              A set is a collection which is both unordered and unindexed.
+              Sets are written with curly brackets.</li>
+                  <code>thisset = {"apple", "banana", "cherry"}
+                  print(thisset)</code>
+
+                  <h3>Set Items</h3>
+                  <li>Set items are unordered, unchangeable, and do not allow duplicate values.</li>
+                  <h3>Unordered</h3>
+                  <li>Unordered means that the items in a set do not have a defined order.
+                        Set items can appear in a different order every time you use them, and cannot be referred to by index or key.</li>
+                  <h3>Unchangeable</h3>
+                  <li>Sets are unchangeable, meaning that we cannot change the items after the set has been created</li>
+                  <h3>Duplicates Not Allowed</h3>
+                  <li>Sets cannot have two items with the same value.</li>
+                  <code>thisset = {"apple", "banana", "cherry", "apple"}
+                          print(thisset)</code>
+    
+    </article>
+  </section>
+  <section class="main-section" id="Python Arrays">
+    <header>Python Arrays</header>
+        <li>Arrays are used to store multiple values in one single variable</li>
+    <article>
+        <h3>What is an Array?</h3>
+            <li>An array is a special variable, which can hold more than one value at a time.
+                If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</li>
+              <code>car1 = "Ford"
+                    car2 = "Volvo"
+                    car3 = "BMW"</code>
+
+                <p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+                    The solution is an array!
+                    An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+                    <h3>Access the Elements of an Array</h3>
+                    <li>You refer to an array element by referring to the index number.</li>
+                    <code>x = cars[0]</code>
+                    <h3>The Length of an Array</h3>
+                    <li>Use the len() method to return the length of an array (the number of elements in an array).</li>
+                    <code>x = len(cars)</code>
+
+                    <h3>Looping Array Elements</h3>
+                      <li>You can use the for in loop to loop through all the elements of an array.</li>
+                      <code>for x in cars:
+                              print(x)</code>
+                              <h3>Adding Array Elements</h3>
+                              <li>You can use the append() method to add an element to an array.</li>
+                              <code>cars.append("Honda")</code>
+                              <h3>Removing Array Elements</h3>
+                              <li>You can use the pop() method to remove an element from the array.</li>
+                              <code>cars.pop(1)</code>
+  
+    </article>
+  </section>
+  <section class="main-section" id="Python Classes/Objects">
+    <header>Python Classes/Objects</header>
+      <li>Python is an object oriented programming language.
+            Almost everything in Python is an object, with its properties and methods.
+            A Class is like an object constructor, or a "blueprint" for creating objects.</li>
+
+            <h3>Create a Sample Class</h3>
+            <code>class MyClass:
+                  x = 5</code>
+                  <p>Now we can use the class named MyClass to create objects:</p>
+                  <code>p1 = MyClass()
+                    print(p1.x)</code>
+
+                    <h3>The __init__() Function</h3>
+                    <li>he examples above are classes and objects in their simplest form, and are not really useful in real life applications.
+                        To understand the meaning of classes we have to understand the built-in __init__() function.
+                        All classes have a function called __init__(), which is always executed when the class is being initiated.
+                        Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created</li>
+                        <code>class Person:
+                              def __init__(self, name, age):
+                                self.name = name
+                                self.age = age
+
+                            p1 = Person("John", 36)
+
+                            print(p1.name)
+                            print(p1.age)</code>
+                        <h3>Object Methods</h3>
+                        <li>Objects can also contain methods. Methods in objects are functions that belong to the object.</li>
+                        <p>Let us create a method in the Person class:</p>
+                        <code>class Person:
+                                def __init__(self, name, age):
+                                  self.name = name
+                                  self.age = age
+
+                                def myfunc(self):
+                                  print("Hello my name is " + self.name)
+
+                              p1 = Person("John", 36)
+                              p1.myfunc()</code>
+                              <h3>The self Parameter</h3>
+                                <li>The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class. It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class</li>
+
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a href="https://www.w3schools.com/python/default.asp"
+            target="_blank">w3school.com</a>
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+
+
+</body>
+</html>
